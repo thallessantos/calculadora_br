@@ -1,0 +1,30 @@
+name: Calculadora BR
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter_mobx: ^0.3.6
+  mobx: ^0.4.0+1
+  dio: ^3.0.8
+  rxdart: ^0.23.1
+  flutter_modular: ^0.1.4
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  mobx_codegen: ^0.4.0+1
+  build_runner: ^1.7.2
+  mockito: ^4.1.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  watch: flutter pub run build_runner watch --delete-conflicting-outputs
+  clean: flutter pub run build_runner clean
